@@ -1,0 +1,32 @@
+html{
+  background-color:pink;
+}
+
+p{
+  color:green;
+  font-size: 50px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+
+#special{
+  color: rgb(33,255,200);
+  background: blue;
+}
+
+.common {
+  color: #fff;
+  background: #000;
+  border: 5px dotted blue;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 60px;
+}
