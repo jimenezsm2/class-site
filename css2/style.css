@@ -1,0 +1,26 @@
+html{
+  font-family: serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+p{
+  font-size: 30px;
+  color: green;
+  font-family: 'Source Code Pro', monospace;
+  /*background: red;
+  border-radius: 20px;
+  text-shadow: 5px 5px 5px blue;
+  box-shadow: 5px 5px 5px darkgray;
+  transform: rotate(20deg); */
+}
+
+.rotate{
+  /*transform: rotate(5deg);
+  transform: scale(2);*/
+  transform: translateY(10px);
+  color:blue;
+  display: inline-block;
+}

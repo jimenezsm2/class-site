@@ -1,0 +1,91 @@
+/* This is the Style Sheet for the Passion Site */
+
+html{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  padding: 0 25px;
+}
+
+header{
+  height: 125px;
+  width: auto;
+  background-image: url(images/flying-flowers.gif);
+  margin-bottom: 40px;
+}
+
+h1{
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 25px;
+}
+
+h2{
+  text-align: left;
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+h3{
+  width: 240px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(152, 78, 114);
+  background-color: rgb(255, 235, 247);
+}
+
+p{
+  font-family: monospace;
+  font-size: 16px;
+  text-align: left;
+}
+
+ul{
+  font-family: monospace;
+  font-size: 16px;
+  text-align: left;
+}
+
+div {
+  float: left;
+  height: 200px;
+  padding: 0 40px;
+}
+
+a{
+
+}
+
+.projects {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.button{
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button-text{
+  font-size: 20px;
+  font-family: monospace;
+  text-align: center;
+}
+
+#class-site{
+  justify-content: center;
+
+}

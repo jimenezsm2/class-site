@@ -1,0 +1,12 @@
+
+* {
+  border-sizing:border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  background: red;
+}
