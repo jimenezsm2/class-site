@@ -1,0 +1,65 @@
+/* This is the stylesheet for the "animation" site */
+* {
+  border-sizing:border-box;
+}
+
+/* The animation code */
+@keyframes sunset {
+  0% {
+    background: rgb(251, 196, 54)
+  }
+  100% {
+    background: rgb(35, 82, 203)
+  }
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg) scale(1);
+    background: rgb(252, 10, 141);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(3);
+    background: rgb(30, 156, 152);
+    opacity: 0; /*This way the animation will get hidden but wont stop animating*/
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+    background: rgb(252, 10, 141);
+    opacity: 1;
+  }
+  /* This way the animation will grow in size and shrink again */
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  background: rgb(244, 208, 101);
+  animation-name: sunset; /*Here we put the name of the animation we want to use. We have laready created the style for that animation*/
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite; /*Here we can write a specific number or infinite if we want it to run over and over*/
+  animation-direction: alternate; /*soft transitions */
+  animation-timing-function: linear;
+  /* animation: sunset 3s infinite alternate linear; This is the shorthand method and we will most likely use this style in class. It is the same as separating all properties. */
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(73, 204, 91);
+  position: fixed;
+  top:40%;
+  left: 43%;
+  /*top:50%;
+  left: 53%;
+  transform: translate(-50%, -50%); */
+  /* animation: spin 4s infinite linear; */
+}
+
+.box:hover{
+  animation: spin 2s infinite linear;
+}

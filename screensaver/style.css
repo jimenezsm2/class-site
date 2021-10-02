@@ -1,0 +1,355 @@
+/* This is the stylesheet for the Screensaver site */
+* {
+  box-sizing:border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  background-color: white;
+  /* background-image: url(../images/colorcircles.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+}
+
+.gradient{
+  background: radial-gradient(ellipse at center, #FFA117 0%, #FC853A 25%, #FFFFFF 100%);
+  /* border-radius: 50%; */
+  width: 150vw;
+  height: 150vh;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  animation: gradient-zoom 30s backwards infinite;
+}
+
+.phrase{
+  font-family: monospace;
+  font-size: 40px;
+  background: white;
+  border-radius: 5%;
+  opacity: 5%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  padding: 15px;
+  animation: fade-1 10s forwards infinite;
+
+}
+
+.pb {
+  bottom:5%;
+  right:5%;
+  left:auto;
+  animation: fade-1 20s 3s forwards infinite;
+}
+
+.pc {
+  top:45%;
+  right:25%;
+  left:auto;
+  bottom: auto;
+  animation: zoominout-2 20s 3s forwards infinite;
+}
+
+.pd{
+  top:30%;
+  left: 35%;
+  bottom: auto;
+  animation: fade-3 15s backwards infinite;
+}
+
+.pe{
+  top: 5%;
+  left: 30%;
+  bottom: auto;
+  animation: fade-2 15s 1s backwards infinite;
+}
+
+.pf{
+  font-size: 20px;
+  top:42%;
+  left:49%;
+  bottom: auto;
+  animation: fade-4 20s 2s backwards infinite;
+}
+
+.circle-yellow {
+  background:rgb(236,175,0);
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  position:absolute;
+  top:35%;
+  left:47%;
+  z-index: -1;
+  animation: zoominout 10s infinite;
+  mix-blend-mode: multiply;
+}
+
+.two{
+  width:25px;
+  height:25px;
+  top:10%;
+  left:12%;
+  animation: fade-2 10s infinite;
+}
+
+.circle-salmon{
+  background:rgb(250,114,104);
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  position:absolute;
+  top:20%;
+  left:50%;
+  z-index: -1;
+  animation: zoominout 7s 1s infinite;
+  mix-blend-mode:multiply;
+}
+
+.three{
+  width:12px;
+  height:12px;
+  top:7%;
+  left:14%;
+  animation: zoominout-2 7s infinite;
+}
+
+.circle-purple{
+  background:rgb(183,66,114);
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  position:absolute;
+  top:30%;
+  left:58%;
+  z-index: -1;
+  animation: zoominout 5s 1s infinite;
+  mix-blend-mode: multiply;
+}
+
+.four{
+  width:12px;
+  height:12px;
+  top:13%;
+  left:16%;
+  animation: zoominout 4s infinite;
+}
+
+.nine{
+  width:12px;
+  height:12px;
+  top:auto;
+  bottom: 15%;
+  left:auto;
+  right: 20%;
+  animation: fade-1 10s 12s infinite;
+}
+
+.circle-navy{
+  background:rgb(33,55,109);
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  position:absolute;
+  top:48%;
+  left:58%;
+  z-index: -5;
+  animation: zoominout 9s 1s infinite;
+  /* mix-blend-mode: multiply; */
+}
+
+.seven{
+  width:20px;
+  height:20px;
+  top:20%;
+  right: 15%;
+  left:auto;
+  animation: fade-2 6s infinite;
+}
+
+.circle-skyblue{
+  background:rgb(147,176,229);
+  width:120px;
+  height:120px;
+  border-radius: 50%;
+  position:absolute;
+  top:32%;
+  left:40%;
+  z-index: -3;
+  animation: zoominout 5s 2s infinite;
+  /* mix-blend-mode: multiply; */
+}
+
+.six{
+  width: 40px;
+  height: 40px;
+  top: 60%;
+  left: 25%;
+  animation: fade-3 8s 2s infinite;
+}
+
+.circle-red{
+  background:rgb(210,54,14);
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+  position:absolute;
+  top:52%;
+  left:40%;
+  z-index: -1;
+  animation: zoominout 5s 1s infinite;
+  mix-blend-mode: multiply;
+}
+
+.five{
+  width:25px;
+  height:25px;
+  top:45%;
+  left:30%;
+  animation: fade-2 6s infinite;
+  mix-blend-mode: normal;
+}
+
+.circle-rose{
+  background:rgb(248,205,195);
+  width:90px;
+  height:90px;
+  border-radius: 50%;
+  position:absolute;
+  top:60%;
+  left:50%;
+  z-index: -1;
+  animation: zoominout 6s infinite;
+  mix-blend-mode: multiply;
+}
+
+.eight{
+  width:25px;
+  height:25px;
+  top:30%;
+  right:25%;
+  left:auto;
+  animation: fade-4 8s infinite;
+  mix-blend-mode: normal;
+}
+
+@keyframes fade-1{
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(-50vh);
+  }
+  80%{
+    opacity:0;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-2{
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(1vh);
+  }
+  50%{
+    opacity:0;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-3{
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+  50%{
+    opacity:0;
+    transform: translateY(0);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-4{
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50%{
+    opacity:1;
+    transform: scale(1.5);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoominout{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoominout-2{
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes gradient-zoom {
+    0% {
+        transform: translate(-50%, -50%) scale(0); opacity: 0;
+    }
+    75% {
+        transform: translate(-50%, -50%) scale(0); opacity: 0;
+    }
+    85% {
+        transform: translate(-50%, -50%) scale(1); opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); opacity: 0;
+    }
+}
