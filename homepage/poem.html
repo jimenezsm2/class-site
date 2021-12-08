@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Fridge Poetry</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <h1>Fridge Poetry<span class="more-info">You can write a poem, give it a try! Fridge poetry, stay inspired while you are hungry...</span></h1>
+
+    <div id="photo" class="main-container">
+      <div class="word-container">
+        <div class="draggable">me</div>
+        <div class="draggable">here</div>
+        <div class="draggable">dream</div>
+        <div class="draggable">friend</div>
+        <div class="draggable">petal</div>
+        <div class="draggable">you</div>
+        <div class="draggable">morning</div>
+        <div class="draggable">sing</div>
+        <div class="draggable">life</div>
+        <div class="draggable">human</div>
+        <div class="draggable">run</div>
+        <div class="draggable">my</div>
+        <div class="draggable">day</div>
+        <div class="draggable">is</div>
+        <div class="draggable">are</div>
+        <div class="draggable">him</div>
+        <div class="draggable">love</div>
+        <div class="draggable">bliss</div>
+        <div class="draggable">they</div>
+        <div class="draggable">know</div>
+        <div class="draggable">blue</div>
+        <div class="draggable">sky</div>
+        <div class="draggable">fresh</div>
+        <div class="draggable">and</div>
+        <div class="draggable">gentle</div>
+        <div class="draggable">time</div>
+        <div class="draggable">then</div>
+        <div class="draggable">and</div>
+        <div class="draggable">ing</div>
+        <div class="draggable">ing</div>
+        <div class="draggable">she</div>
+        <div class="draggable">s</div>
+        <div class="draggable">thousand</div>
+        <div class="draggable">ten</div>
+        <div class="draggable">one</div>
+        <div class="draggable">peace</div>
+        <div class="draggable">above</div>
+        <div class="draggable">head</div>
+        <div class="draggable">ing</div>
+        <div class="draggable">cook</div>
+        <div class="draggable">sweet</div>
+        <div class="draggable">laugh</div>
+        <div class="draggable">symphony</div>
+        <div class="draggable">perhaps</div>
+        <div class="draggable">you</div>
+        <div class="draggable">me</div>
+        <div class="draggable">away</div>
+        <div class="draggable">make</div>
+        <div class="draggable">.</div>
+        <div class="draggable">.</div>
+        <div class="draggable">.</div>
+        <div class="draggable">the</div>
+        <div class="draggable">to</div>
+        <div class="draggable">create</div>
+        <div class="draggable">special</div>
+        <div class="draggable">wonder</div>
+        <div class="draggable">us</div>
+        <div class="draggable">no</div>
+        <div class="draggable">yes</div>
+        <div class="draggable">to</div>
+        <div class="draggable">the</div>
+        <div class="draggable">then</div>
+        <div class="draggable">always</div>
+        <div class="draggable">pretend</div>
+        <div class="draggable">like</div>
+        <div class="draggable">I</div>
+        <div class="draggable">am</div>
+        <div class="draggable">are</div>
+        <div class="draggable">glow</div>
+        <div class="draggable">was</div>
+        <div class="draggable">went</div>
+        <div class="draggable">imagine</div>
+        <div class="draggable">boy</div>
+        <div class="draggable">in</div>
+        <div class="draggable">at</div>
+        <div class="draggable">park</div>
+        <div class="draggable">that</div>
+        <div class="draggable">a</div>
+        <div class="draggable">wish</div>
+        <div class="draggable">as</div>
+        <div class="draggable">the</div>
+        <div class="draggable">we</div>
+        <div class="draggable">swim</div>
+        <div class="draggable">in</div>
+        <div class="draggable">voices</div>
+        <div class="draggable">of</div>
+        <div class="draggable">present</div>
+        <div class="draggable">same</div>
+        <div class="draggable">different</div>
+        <div class="draggable">again</div>
+        <div class="draggable">every</div>
+        <div class="draggable">if</div>
+        <div class="draggable">it</div>
+        <div class="draggable">work</div>
+        <div class="draggable">will</div>
+        <div class="draggable">trascend</div>
+      </div>
+
+      <div class="word-receiver">
+        <button class="save-button" onclick="takeshot()">Take a Screenshot</button>
+        <a href="javascript:location.reload(true)" class="save-button reset">Reset</a>
+        <div class="save-button reset back"><a href="index.html">Back</a></div>
+      </div>
+    </div>
+
+    <h1>Screenshot:</h1>
+      <div id="output"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+
+    <!--Our .js file will normally be the last script we call after all the other jquery js libraries-->
+
+    <script src="functions.js"></script>
+  </body>
+
+</html>

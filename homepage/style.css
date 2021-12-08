@@ -1,0 +1,178 @@
+/* This is the stylesheet for homepage site */
+* {
+  box-sizing:border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1{
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+li{
+  background: rgba(229, 242, 245, 0.5);
+  color: rgb(34, 41, 129);
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin: 5px 0 0 0;
+}
+
+li:hover{
+  background: rgba(238, 141, 51, 0.9);
+  color: white;
+}
+
+#photo {
+  border: 4px solid green;
+  padding: 2px;
+}
+
+.main-page{
+  background-image: url(images/home.jpg);
+  justify-content: center;
+}
+
+.question{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 50%;
+  height: 25%;
+  padding: 25px;
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left:25%
+}
+
+.menu-button{
+  background: rgb(254, 142, 27);
+  color: white;
+  font-family: monospace;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 10%;
+  height: 5%;
+  bottom: 40%;
+  left:40%;
+}
+
+.button-option{
+  left:53%;
+}
+
+.sidebar {
+  background: rgba(132, 153, 198, 0.95);
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  position: fixed;
+  top:0;
+  right:-300px;
+  width: 300px;
+  height: 100vh;
+  padding: 1rem;
+  transition: right .5s;
+}
+
+.active {
+  right:0;
+}
+
+.more-info{
+  background: rgb(245, 245, 245);
+  font-family: monospace;
+  font-size: 20px;
+  padding: 12px;
+  margin: 5px;
+  position: absolute;
+  left: 31%;
+  display: none;
+}
+
+h1:hover .more-info {
+    display: inline-block;
+}
+
+.main-container{
+  background-image: url(images/kitchen-wallpaper.jpeg);
+  width: 100%;
+  /* height: 100vh; */
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap:10px;
+}
+
+.word-container{
+  background: rgba(57,50,50, 0.8);
+  border: solid
+  white 6px;
+  border-radius: 5px;
+  width: 30%;
+  height: 100%;
+  /* overflow-y:scroll; */
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+.word-receiver{
+  background: rgba(202,202,204,0.98);
+  border: solid
+  white 6px;
+  border-radius: 5px;
+  width: 70%;
+  height: auto;
+  padding: 15px;
+}
+
+.draggable{
+  background: rgb(245, 245, 245);
+  font-family: monospace;
+  font-size: 20px;
+  padding: 12px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+.save-button{
+  background: rgb(254, 142, 27);
+  color: white;
+  border-radius: 5%;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 12px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 16%;
+  right:13%;
+}
+
+.reset{
+  right: 8%;
+}
+
+.back{
+  right:3%;
+}

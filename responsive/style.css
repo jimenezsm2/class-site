@@ -1,0 +1,76 @@
+
+/* This is the style sheet for the Responsive Exercise Site */
+
+/* To build things that aree flexible and responsive, we want to use %
+
+Media Queries help us make websites responsive. We should always put them at the end of our CSS document */
+
+* {
+  box-sizing:border-box;
+}
+
+
+html{
+  background: rgb(190, 224, 127);
+  font-size: 200%;
+}
+
+img{
+  max-width: 100%;
+}
+
+p{
+  background: rgb(236, 235, 186);
+  max-width: 800px;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item{
+  background: rgb(150, 88, 150);
+  width: 200px;
+  height: 200px;
+  padding: 2em;
+}
+
+.object{
+  background: rgb(247, 184, 42);
+  width: 50vw;
+  height: 50vh;
+}
+
+.little-box{
+  background: rgb(252, 59, 111);
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  html{
+    background: rgb(240, 16, 23);
+    font-size: 40px;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  .item{
+    width: 100%;
+  }
+
+/* We want to pay attention to the order of the media queries. We want to alwas have the larger max-withd above the smaller ones */
+
+@media screen and (max-width: 600px) {
+  html{
+    background: rgb(42, 74, 119);
+  }
+}
+
+}

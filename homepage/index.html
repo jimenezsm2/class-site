@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Homepage</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body class="main-page">
+
+    <div class="question">
+      What's your Name? <input id="input"></input>
+      <button onclick="go()">Greet</button>
+
+      <p id="output"></p>
+    </div>
+
+    <!-- first we set up the button that is triggering our javascript -->
+    <!-- note that the element doesn't need to be a <button> to work -->
+
+    <div class="menu-button" onclick="toggle()">I'm thinking</div>
+    <div class="menu-button button-option"><a href="poem.html">I'm relaxing</a></div>
+
+    <!-- the box that we will be altering with our javascript -->
+    <div id="box" class="sidebar">
+    Priorities to Origanize (Help!)
+    <ul id="sortable">
+      <li> Meal Plan </li>
+      <li> Wash Clothes </li>
+      <li> Make Dinner </li>
+      <li> Do Homework </li>
+      <li> Review Budget </li>
+      <li> Call Mom </li>
+      <li> Clean House </li>
+      <li> Check Emails </li>
+      <li> Exercise </li>
+      <li> Buy Coffee </li>
+      <li> Wake Up </li>
+      <li> Plan Picnic </li>
+      <li> Fix Bike </li>
+      <li> Write To-Do List </li>
+      <li> Rake Leaves </li>
+      <li> Halloween? </li>
+      <li> Organize Party </li>
+      <li> Have Fun </li>
+      <li> Read Book </li>
+    </div>
+
+    <!-- <div class='marquee'>Lorem ipsum dolor sit amet, consectetur adipiscing elit END.</div> -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+  <script src="functions.js"></script>
+
+
+
+  </body>
+
+</html>

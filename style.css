@@ -47,6 +47,15 @@ div {
   margin: auto;
 }
 
+/* .container{
+  background: rgb(230, 162, 30);
+  width: 100%;
+  padding: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+} */
+
 .button{
   width: 150px;
   border-radius: 50%;
