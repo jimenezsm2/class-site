@@ -22,6 +22,18 @@ button{
   z-index: 200;
 }
 
+button::after {
+  content:"TURN THE RADIO ON";
+}
+
+.active {
+  background:rgb(72, 203, 61);
+}
+
+button.active::after {
+  content:"TURN THE RADIO OFF";
+}
+
 .title{
   width: 60%;
   height: 25%;
@@ -49,6 +61,7 @@ button{
   gap:20px;
   position: absolute;
   top: 50%;
+  z-index: 250;
 }
 
 .stations{
@@ -82,7 +95,15 @@ button{
   bottom: 8%;
   left: 5%;
   animation: fade-1 30s 10s infinite;
+  z-index: 300;
 }
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: navy;
+  }
 
 
 #myDIV {
@@ -91,6 +112,8 @@ button{
 
 #canvas{
   animation: fade-1 40s infinite;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fade-1 {
